@@ -1,4 +1,6 @@
 - hosts: kubernetes
+  remote_user: ansible
+  become: true
   tasks:
   - name: Deploy the service
     k8s:
